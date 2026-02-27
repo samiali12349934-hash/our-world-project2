@@ -1,1 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Countries & Continents - Our World App</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+  background: linear-gradient(to right, #2193b0, #6dd5ed);
+  color: white;
+  font-family: Arial, sans-serif;
+  transition: 0.5s;
+}
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  animation: float 3s infinite ease-in-out;
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+nav a {
+  margin: 10px;
+  padding: 10px 20px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+nav a:hover {
+  background: darkblue;
+  transform: scale(1.1);
+}
+.section-box {
+  background: rgba(0,0,0,0.4);
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px cyan;
+  animation: appear 1s ease forwards;
+  opacity: 0;
+}
+@keyframes appear {
+  to { opacity: 1; }
+}
+img.float-img {
+  width: 70%;
+  border-radius: 15px;
+  animation: floatImg 3s infinite ease-in-out;
+}
+@keyframes floatImg {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(-15px);}
+  100% {transform: translateY(0px);}
+}
+</style>
+</head>
+<body>
 
+<header>🌎 Countries & Continents</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="climate.html">Climate</a>
+  <a href="pollution.html">Pollution</a>
+  <a href="nature.html">Nature</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="account.html">Account</a>
+</nav>
+
+<div class="section-box">
+<h2>🌍 Continents</h2>
+<p>The world is divided into 7 continents: Africa, Antarctica, Asia, Europe, North America, South America, and Australia.</p>
+<img class="float-img" src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg" alt="World Map">
+</div>
+
+<div class="section-box">
+<h2>🗺 Countries</h2>
+<p>There are 195 countries in the world. Each country has its own culture, language, and history.</p>
+<img class="float-img" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Blank_map_of_the_world.svg" alt="Countries Map">
+</div>
+
+<div class="section-box">
+<h2>💡 Fun Facts</h2>
+<ul>
+<li>Russia is the largest country by area.</li>
+<li>Vatican City is the smallest country.</li>
+<li>Asia is the largest continent by population.</li>
+<li>Australia is both a country and a continent.</li>
+</ul>
+</div>
+
+</body>
+</html>
