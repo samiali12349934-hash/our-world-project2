@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nature - Our World App</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+  background: linear-gradient(to right, #76b852, #8DC26F);
+  color: white;
+  font-family: Arial, sans-serif;
+  transition: 0.5s;
+}
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  animation: float 3s infinite ease-in-out;
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+nav a {
+  margin: 10px;
+  padding: 10px 20px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+nav a:hover {
+  background: darkgreen;
+  transform: scale(1.1);
+}
+.section-box {
+  background: rgba(0,0,0,0.4);
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px lightgreen;
+  animation: appear 1s ease forwards;
+  opacity: 0;
+}
+@keyframes appear {
+  to { opacity: 1; }
+}
+img.float-img {
+  width: 60%;
+  border-radius: 15px;
+  animation: floatImg 3s infinite ease-in-out;
+}
+@keyframes floatImg {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(-15px);}
+  100% {transform: translateY(0px);}
+}
+</style>
+</head>
+<body>
 
+<header>🌿 Plants & Wild Animals</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="climate.html">Climate</a>
+  <a href="pollution.html">Pollution</a>
+  <a href="countries.html">Countries</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="account.html">Account</a>
+</nav>
+
+<div class="section-box">
+<h2>🌱 Plants</h2>
+<p>Plants are essential for life. They provide oxygen, food, medicine, and habitats for animals.</p>
+<img class="float-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Rainforest_Plants.jpg" alt="Plants">
+</div>
+
+<div class="section-box">
+<h2>🐾 Wild Animals</h2>
+<p>Wild animals maintain the ecosystem balance. They help with pollination, seed dispersal, and controlling pests.</p>
+<img class="float-img" src="https://upload.wikimedia.org/wikipedia/commons/2/2c/African_Elephant.jpg" alt="Wild Animals">
+</div>
+
+<div class="section-box">
+<h2>🌎 Benefits</h2>
+<ul>
+<li>Provide oxygen and clean air</li>
+<li>Food and medicine for humans</li>
+<li>Support biodiversity</li>
+<li>Maintain ecosystem balance</li>
+</ul>
+</div>
+
+<div class="section-box">
+<h2>⚡ Causes of Threats</h2>
+<ul>
+<li>Deforestation</li>
+<li>Pollution</li>
+<li>Climate change</li>
+<li>Poaching and illegal hunting</li>
+</ul>
+</div>
+
+</body>
+</html>
