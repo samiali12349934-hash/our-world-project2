@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Climate - Our World App</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+  background: linear-gradient(to right, #56CCF2, #2F80ED);
+  color: white;
+  font-family: Arial, sans-serif;
+  transition: 0.5s;
+}
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  animation: float 3s infinite ease-in-out;
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+nav a {
+  margin: 10px;
+  padding: 10px 20px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+nav a:hover {
+  background: green;
+  transform: scale(1.1);
+}
+.section-box {
+  background: rgba(0,0,0,0.4);
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px cyan;
+  animation: appear 1s ease forwards;
+  opacity: 0;
+}
+@keyframes appear {
+  to { opacity: 1; }
+}
+img.float-img {
+  width: 60%;
+  border-radius: 15px;
+  animation: floatImg 3s infinite ease-in-out;
+}
+@keyframes floatImg {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(-15px);}
+  100% {transform: translateY(0px);}
+}
+</style>
+</head>
+<body>
 
+<header>🌡 Climate & Global Warming</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="pollution.html">Pollution</a>
+  <a href="nature.html">Nature</a>
+  <a href="countries.html">Countries</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="account.html">Account</a>
+</nav>
+
+<div class="section-box">
+<h2>🌡 What is Climate?</h2>
+<p>Climate is the average weather of a place over a long period of time.</p>
+<img class="float-img" src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Global_Warming_Map.jpg" alt="Climate Image">
+</div>
+
+<div class="section-box">
+<h2>🔥 Causes of Climate Change</h2>
+<ul>
+<li>Burning fossil fuels (coal, oil, gas)</li>
+<li>Deforestation</li>
+<li>Pollution from factories and vehicles</li>
+<li>Greenhouse gas emissions</li>
+</ul>
+</div>
+
+<div class="section-box">
+<h2>🌎 Effects of Global Warming</h2>
+<ul>
+<li>Rising sea levels</li>
+<li>Melting ice caps and glaciers</li>
+<li>Extreme weather (storms, floods, droughts)</li>
+<li>Loss of biodiversity</li>
+</ul>
+</div>
+
+<div class="section-box">
+<h2>💡 How to Reduce Climate Change?</h2>
+<ul>
+<li>Plant trees and reforestation</li>
+<li>Use renewable energy</li>
+<li>Reduce waste and recycle</li>
+<li>Save water and energy</li>
+</ul>
+</div>
+
+</body>
+</html>
