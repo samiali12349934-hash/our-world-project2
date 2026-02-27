@@ -1,1 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Quiz - Our World App</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  color: white;
+  font-family: Arial, sans-serif;
+  transition: 0.5s;
+}
+header {
+  text-align: center;
+  padding: 20px;
+  font-size: 28px;
+  animation: float 3s infinite ease-in-out;
+}
+@keyframes float {
+  0% { transform: translateY(0px);}
+  50% { transform: translateY(-10px);}
+  100% { transform: translateY(0px);}
+}
+nav a {
+  margin: 10px;
+  padding: 10px 20px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+nav a:hover {
+  background: darkred;
+  transform: scale(1.1);
+}
+.section-box {
+  background: rgba(0,0,0,0.4);
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px yellow;
+  animation: appear 1s ease forwards;
+  opacity: 0;
+}
+@keyframes appear { to { opacity:1; } }
+button.option-btn {
+  display: block;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  background: darkred;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button.option-btn:hover { background: orange; transform: scale(1.05);}
+#scoreboard { margin-top: 20px; font-size: 20px;}
+</style>
+</head>
+<body>
 
+<header>📝 Quiz: Our World</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="climate.html">Climate</a>
+  <a href="pollution.html">Pollution</a>
+  <a href="nature.html">Nature</a>
+  <a href="countries.html">Countries</a>
+  <a href="account.html">Account</a>
+</nav>
+
+<div class="section-box">
+<h2>Question 1: What gas causes global warming?</h2>
+<button class="option-btn" onclick="checkAnswer(this, true)">CO₂</button>
+<button class="option-btn" onclick="checkAnswer(this, false)">O₂</button>
+<button class="option-btn" onclick="checkAnswer(this, false)">N₂</button>
+</div>
+
+<div class="section-box">
+<h2>Question 2: What is deforestation?</h2>
+<button class="option-btn" onclick="checkAnswer(this, true)">Cutting down trees</button>
+<button class="option-btn" onclick="checkAnswer(this, false)">Planting trees</button>
+<button class="option-btn" onclick="checkAnswer(this, false)">Cleaning rivers</button>
+</div>
+
+<div class="section-box">
+<h2>Question 3: Which is a renewable energy source?</h2>
+<button class="option-btn" onclick="checkAnswer(this, true)">Solar</button>
+<button class="option-btn" onclick="checkAnswer(this, false)">Coal</button>
+<button class="option-btn" onclick="checkAnswer(this, false)">Oil</button>
+</div>
+
+<div id="scoreboard" class="section-box">
+Score: <span id="score">0</span>
+</div>
+
+<script>
+let score = 0;
+function checkAnswer(btn, correct) {
+  if(correct){
+    score += 1;
+    btn.style.background = "green";
+  } else {
+    btn.style.background = "red";
+  }
+  document.getElementById("score").innerText = score;
+  setTimeout(()=>{ btn.style.background="darkred"; }, 800);
+}
+</script>
+
+</body>
+</html>
